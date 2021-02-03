@@ -13,10 +13,10 @@ public class Match {
     private Integer drawPoints = 1;
     private String referee;
 
-    public Partido(Equipo equipo1, Equipo equipo2)
+    public Match(Team localTeam, Team visitorTeam)
     {
-        this.localTeam = equipo1;
-        this.visitorTeam = equipo2;
+        this.localTeam = localTeam;
+        this.visitorTeam = visitorTeam;
         // Los goles se setean en -1 por ser valores no validos hasta que se generen
         localScore = -1;
         visitorScore = -1;

@@ -64,8 +64,7 @@ public class Ranking {
     public Team getRank;
 
     { //Creamos la clasificacion de los 20 equipos de la liga con sus respectivos puntos
-        public void mostrarClasificaciones ()
-        {
+        public void mostrarClasificaciones(){
             // Toma un set de las claves para iterar y una copia de la clasificacion
             HashMap<Team, Integer> hashMap = new HashMap<Team, Integer>(position);
             Set<Team> setEquipos = getRank.keySet();
@@ -107,8 +106,7 @@ public class Ranking {
             }
             System.out.println(clasi);
         }
-        private void actualizaClasificacion (HashMap < Team, TeamPosition > TeamPosition)
-        {
+        private void actualizaClasificacion (HashMap<Team,TeamPosition > TeamPosition){
             // Genera un set con las keys para iterar por el hashmap
             Set<Team> setEquipos = TeamPosition.keySet();
             for (Team equipo : setEquipos) {

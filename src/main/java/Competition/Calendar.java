@@ -60,10 +60,10 @@ public class Calendar {
                     int index = 0;
                     boolean addDate = true;
                     Date matchdate = null;
-                    while(indice < (team.size() - 1))
+                    while(indice < (Team.size() - 1))
                     {
                         // Genera una jornada
-                        jornada = new Date(team);
+                        jornada = new Date(Team);
                         // Comprueba que no exista en el arraylist una incompatible. Si no hay incompatibles la añade
                         addDate = true;
                         index = 0;
@@ -88,5 +88,3 @@ public class Calendar {
 
         }
 
-    }
-}
