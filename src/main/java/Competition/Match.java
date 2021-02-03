@@ -13,7 +13,14 @@ public class Match {
     private Integer drawPoints = 1;
     private String referee;
 
-
+    public Partido(Equipo equipo1, Equipo equipo2)
+    {
+        this.localTeam = equipo1;
+        this.visitorTeam = equipo2;
+        // Los goles se setean en -1 por ser valores no validos hasta que se generen
+        localScore = -1;
+        visitorScore = -1;
+    }
     //Cuando se realice un partido queremos saber quien es el ganador
     public Team getWinner() {
         try {

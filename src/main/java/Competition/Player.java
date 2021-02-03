@@ -2,9 +2,17 @@ package Competition;
 
 public class Player {
     private String Name;
-    private String item;
     private String Surname;
     private Integer age;
+    private Integer dorsal;
+
+    public Integer getDorsal() {
+        return dorsal;
+    }
+
+    public void setDorsal(Integer dorsal) {
+        this.dorsal = dorsal;
+    }
 
     public String getName() {
         return Name;
@@ -12,14 +20,6 @@ public class Player {
 
     public void setName(String name) {
         Name = name;
-    }
-
-    public String getItem() {
-        return item;
-    }
-
-    public void setItem(String item) {
-        this.item = item;
     }
 
     public String getSurname() {
